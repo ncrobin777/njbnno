@@ -1,0 +1,15 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@media print {
+  .no-print {
+    display: none !important;
+  }
+  body {
+    background: #ffffff !important;
+    color: #0f172a !important;
+  }
+  .print-break-inside-avoid {
+    break-inside: avoid;
+  }
+}
